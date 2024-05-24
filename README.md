@@ -1,4 +1,4 @@
-# Site Web Professionnel Pour Un Cabinet Dentaire
+# Site Web Professionnel Pour Simplon Sénégal
 
 ​En tant que développeur frontend, le cabinet m'a sollicite pour gérer efficacement son identité numérique, Simplon Sénégal sollicite à mes compétences pour créer une page d'atterrissage (landing page) pour notre fabrique. 
 
