@@ -402,6 +402,43 @@ p.separator-ped {
     height: 700px;
     box-shadow: 20px -20px var(--red);
 }
+.pil-right .sep-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    content: "";
+    background-color: var(--white);
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+    left: 46%;
+    margin: 20px;
+    top: -10%;
+}
+.pil-right .sep-img::before{
+    flex: 1;
+    position: absolute;
+    content: "";
+    background-color: var(--white);
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+    left: -300%;
+}
+.pil-right .sep-img::after{
+    flex: 1;
+    position: absolute;
+    content: "";
+    background-color: var(--white);
+    width: 40px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 40px;
+    left: 300%;
+}
 /*valeurs*/
 .valeurs {
     display: flex;
@@ -428,19 +465,33 @@ p.separator-ped {
 }
 .val-left h1 {
     color: var(--red);
-    font-size: 45px;
+    font-size: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
     font-weight: 600;
 }
-.val-left p {
-    font-size: 20px;
-    line-height: 50px;
+.val-left .respect {
+    display: flex;
+    position: relative;
+}
+.val-left .respect p {
+    font-size: 18px;
+    line-height: 40px;
     text-align: left;
     color: var(--black);
-    width: 600px;
-    font-weight: 600;
+    width: 520px;
+    font-weight: 500;
     margin-bottom: 50px;
+}
+.val-left .respect .triangle {
+    height: 30px;
+    width: 70px;
+    background-color: var(--red);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(-90deg);
+    top: 29%;
+    left: 88%;
+    position: absolute;
 }
 .val-left button {
     align-content: center;
@@ -601,6 +652,10 @@ p.separator-ped {
     width: 60px;
     height: 50px;
 }
+.contact-col1 div img[src="images/facebook.svg"] {
+    width: 35px;
+    height: 50px;
+}
 .contact .contact-col2 {
     display: flex;
     flex-direction: column;
@@ -695,7 +750,7 @@ p.separator-ped {
 .eq-contain .profil {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 270px;
     padding: 50px;
     height: 450px;
     box-shadow: 0px 3px 18px 17px var(--gray);
@@ -706,29 +761,30 @@ p.separator-ped {
     align-self: start;
 }
 .profil h2 {
-    font-size: 33px;
+    font-size: 30px;
     font-weight: 600;
     letter-spacing: -3px;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 .profil h4 {
-    font-size: 25px;
+    font-size: 20px;
     color: var(--red);
     margin-bottom: 40px;
 }
 .profil p {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 40px;
     color: var(--white-gray);
 }
 .profil div {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 50%;
 }
 .profil div ion-icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     color: var(--red);
     cursor: pointer;
 }
@@ -786,7 +842,7 @@ p.separator-ped {
     background-color: var(--pink);
     border-radius: 20px;
     padding: 30px;
-    width: 42%;
+    width: 48%;
 }
 .offres h1 {
     color: var(--red);
@@ -802,12 +858,23 @@ p.separator-ped {
 .offres h4 {
     font-size: 22px;
     font-weight: 600;
+    position: relative;
+}
+.offres h4::after{
+    position: absolute;
+    content: "";
+    background-color: var(--red);
+    width: 30px;
+    height: 2px;
+    padding: 1px;
+    left: 87%;
+    top: 45%;
 }
 .offres .poste {
     display: flex;
     justify-content: space-between;
     width: 85%;
-    margin-bottom: 30px;
+    margin-top: 15px ;
 }
 .poste .poste-left {
     width: 50%;
@@ -825,45 +892,47 @@ p.separator-ped {
 .poste .poste-right {
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    max-width: 40%;
     background-color: var(--white);
-    width: 200px;
+    width: 60%;
     justify-content: center;
     align-items: start;
     border-radius: 15px;
-    box-shadow: 0px 0px 12px 0px var(--white-gray);
+    box-shadow: 0px 0px 20px 0px var(--white-gray);
+    height: 150px;
+    gap: 13px;
 }
 .poste-right div {
     display: flex;
     width: 80%;
-    margin-top: 10px;
     margin-left: 20px;
 }
 .poste-right div p {
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 13px;
     text-align: start;
 }
 .poste-right div ion-icon {
     color: var(--red);
    font-weight: 900;
-   height: 25px;
-   width: 25px;
+   height: 20px;
+   width: 20px;
    margin-right: 10px;
    cursor: pointer;
 }
 .offres button{
     border: 0;
     background-color: var(--red);
-    width: 200px;
+    width: 160px;
     color: var(--white);
     border-radius: 20px;
     font-size: 16px;
-    height: 39px;
+    height: 42px;
     font-weight: 600;
     align-content: center;
-    margin-left: 30%;
+    margin-left: 35%;
     cursor: pointer;
+    margin-top: 40px;
 }
 .offres .form {
     display: flex;
@@ -890,7 +959,8 @@ p.separator-ped {
 /*FORMULAIRE*/
 .recrut2 .recrut-form {
     display: flex;
-    width: 50%;
+    width: 49%;
+    margin-left: 20px;
 }
 .recrut-form #formul {
     display: flex;
@@ -905,27 +975,27 @@ p.separator-ped {
 }
 #formul div .input-form {
     padding: 20px;
-    width: 265px;
+    width: 215px;
     border-radius: 7px;
     border: none;
     box-shadow: 0px 0px 3px 0px var(--white-gray);
 }
 #formul div .input-form::placeholder {
-    font-size: 19px;
+    font-size: 16px;
     color: var(--white-gray);
 }
 #formul .join {
     display: flex;
     justify-content: end;
-    width: 80%;
+    width: 85%;
 }
 #formul .join ion-icon {
     transform: rotate(120deg);
     color: var(--red);
     font-weight: 600;
-    font-size: 30px;
+    font-size: 22px;
     place-self: center;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 #formul .join p {
     color: var(--red);
@@ -943,21 +1013,21 @@ p.separator-ped {
     margin-bottom: 30px;
 }
 #formul textarea::placeholder {
-    font-size: 19px;
+    font-size: 17px;
     color: var(--white-gray);
 }
 #formul label {
     display: flex;
-    width: 40%;
+    width: 50%;
     justify-content: space-between;
     font-size: 18px;
     font-weight: 500;
 }
-#formul label input {
-    accent-color: var(--cerise);
+#formul label input[type="checkbox"] {
     width: 20px;
     height: 20px;
     place-self: center;
+    accent-color: var(--hippie-pink);
 }
 #formul button {
     border: 0;
