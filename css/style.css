@@ -20,6 +20,8 @@
     padding: 0;
 }
 body {
+    display: flex;
+    justify-content: center;
     position: relative;
     width: 100%;
     background-color: var(--dusty-gray);
@@ -41,7 +43,7 @@ header {
     width: 94%;
     height: 80px;
     background-color: var(--white);
-    padding: 10px 40px 10px 50px;
+    padding: 10px 30px 10px 50px;
     box-shadow: 0px 0px 25px -9px rgba(141, 141, 141, 0.9);
 }
 header .logo {
@@ -73,17 +75,15 @@ header .menu-head ul {
 .menu-head ul li a {
     text-decoration: none;
     color: var(--black);
-    height: 95px;
 }
 .menu-head ul li ion-icon {
     font-size: 30px;
     cursor: pointer;
 }
-.menu-head ul li a:hover {
-    color: var(--red);
-    border-bottom: 6px solid currentColor;
+.menu-head ul li:hover, .menu-head ul li a:hover {
+    border-bottom: 6px solid var(--red);
     font-weight: 800;
-    
+    color: var(--red);
 }
 header .contact-head {
     display: flex;
@@ -106,20 +106,20 @@ header .contact-head {
     border-right: 6px solid transparent;
     border-top: 6px solid #f00;
     top: 45%;
-    right: 15px;
-    
+    right: 13px;
 }
 .select select {
     border: 0;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 800;
     height: 39px;
     width: 100px;
+    background: none;
 }
 .contact-head button {
     border: 0;
     background-color: var(--red);
-    width: 200px;
+    width: 230px;
     color: var(--white);
     border-radius: 20px;
     font-size: 16px;
@@ -155,7 +155,7 @@ header .contact-head {
     margin-top: 12%;
     width:40%;
     height: 150px;
-    font-size: 40px;
+    font-size: 38px;
     background-color: var(--red);
     text-align: end;
     color: var(--white);
@@ -166,7 +166,7 @@ header .contact-head {
     margin-left: 50px;
 }
 .hist-left h1 {
-    font-size: 70px;
+    font-size: 60px;
     letter-spacing: 4px;
     font-weight: 700;
 }
@@ -194,7 +194,7 @@ header .contact-head {
     content: "";
     z-index: -1;
     width: 510px;
-    height: 550px;
+    height: 590px;
     transform: rotate(6deg);
     border-radius: 10px;
     background-color: var(--red);
@@ -354,7 +354,7 @@ p.separator-ped {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    box-shadow: 660px -120px var(--pink);
+    box-shadow: 560px -114px var(--pink);
     z-index: -1;
     transform: rotate(6deg);
 }
@@ -364,7 +364,7 @@ p.separator-ped {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    box-shadow: 10px 560px var(--pink);
+    box-shadow: 15px 670px var(--pink);
     z-index: -1;
     transform: rotate(6deg);
 }
@@ -577,8 +577,8 @@ p.separator-ped {
     gap: 40PX;
     background-color: var(--black);
     color: var(--white);
-    padding: 52px;
-    width: 93%;
+    padding: 54px;
+    width: 92%;
     padding-top: 70px;
 }
 .contact .contact-col1 {
@@ -645,7 +645,7 @@ p.separator-ped {
     background-color: var(--white);
     width: 350px;
     padding: 10px;
-    color: var(--white);
+    color: var(--white-gray);
     border-radius: 10px;
     font-size: 17px;
     height: 30px;
@@ -661,8 +661,8 @@ p.separator-ped {
     font-size: 20px;
     height: 50px;
     font-weight: 700;
-    top: 74%;
-    left: 70%;
+    top: 79.3%;
+    left: 73%;
     cursor: pointer;
 }
 /*equipe*/
@@ -982,8 +982,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 93%;
-    padding: 52px;
+    padding: 30px 50px;
+    width: 92.6%;
     background-color: var(--red);
     color: var(--white);
 }
