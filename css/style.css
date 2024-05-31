@@ -594,34 +594,20 @@ p.separator-ped {
     font-size: 45px;
     text-align: center;
     font-weight: 800;
+    margin: 60PX 0px;
 }
 .partenaire .parte-logo {
     padding: 60px;
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     align-items: center;
 }
-.parte-logo img[alt="ffe"] {
-    width: 150px;
-    height: 150px;
-}
-.parte-logo img[alt="solidarité"] {
-    width: 150px;
-    height: 150px;
-}
-.parte-logo img[alt="orange"] {
+.parte-logo img {
     width: 200px;
     height: 150px;
 }
-.parte-logo img[alt="aviva"] {
-    width: 300px;
-    height: 100px;
-}
-.parte-logo img[alt="union"] {
-    width: 150px;
-    height: 100px;
-}
+
 /*contact*/
 .contact {
     display: flex;
